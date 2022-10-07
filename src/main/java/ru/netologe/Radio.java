@@ -12,7 +12,7 @@ public class Radio {
         this.maxStation = 9;
     }
     public Radio (int stationClout) {
-        this.maxStation = stationClout -1;
+        this.maxStation = stationClout - 1;
     }
     public int getCurrentStation() {
         return currentStation;
