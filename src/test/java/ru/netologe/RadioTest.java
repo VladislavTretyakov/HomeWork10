@@ -18,10 +18,10 @@ public class RadioTest {
     @Test
     public void aboveBorderVolume() {
         Radio volume = new Radio();
-        volume.setCurrentVolume(10);
+        volume.setCurrentVolume(100);
         volume.nextVolume();
 
-        int expected = 10;
+        int expected = 100;
         int actual = volume.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
@@ -42,7 +42,7 @@ public class RadioTest {
     @Test
     public void beyondUpperLimitVolume() {
         Radio volume = new Radio();
-        volume.setCurrentVolume(11);
+        volume.setCurrentVolume(101);
 
         int expected = 0;
         int actual = volume.getCurrentVolume();
